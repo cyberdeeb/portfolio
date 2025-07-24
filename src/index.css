@@ -1,17 +1,18 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-size: "Poppins", sans-serif;
+  font-size: 'Poppins', sans-serif;
   background: black;
   color: ivory;
 }
 
 @layer utilities {
-
   @keyframes blink {
-    0%, 100% {
+    0%,
+    100% {
       opacity: 1;
     }
     50% {
@@ -20,7 +21,7 @@ html, body {
   }
 
   .animate-blink {
-    animation: blink .8s step-end infinite;
+    animation: blink 0.8s step-end infinite;
   }
 
   @keyframes loading {
@@ -33,8 +34,6 @@ html, body {
   }
 
   .animate-loading-bar {
-    animation: loading .8s ease infinite;
+    animation: loading 0.8s ease infinite;
   }
-
 }
-

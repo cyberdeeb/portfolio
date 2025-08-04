@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import { About } from './components/sections/About';
+import { Contact } from './components/sections/Contact';
 import { Home } from './components/sections/Home';
 import { Loading } from './components/Loading';
 import { MobileMenu } from './components/MobileMenu';
@@ -27,6 +28,7 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Contact />
       </div>
     </>
   );

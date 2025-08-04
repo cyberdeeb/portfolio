@@ -35,7 +35,7 @@ export const Projects = () => {
               </div>
               <div className="flex gap-3 mt-2">
                 <a
-                  href="#"
+                  href="https://lead-validator-api-production.up.railway.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-red-400 hover:text-red-300 hover:underline transition-colors"
@@ -82,7 +82,7 @@ export const Projects = () => {
               </div>
               <div className="flex gap-3 mt-2">
                 <a
-                  href="#"
+                  href="https://ai-mood-generator-playlist.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-red-400 hover:text-red-300 hover:underline transition-colors"

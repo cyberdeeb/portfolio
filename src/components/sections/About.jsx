@@ -100,14 +100,24 @@ export const About = () => {
           <div className="flex flex-col gap-6 mt-8">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">Education</h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li className="text-gray-300">
-                  <strong>Entrepreneurship</strong> - CSUSB (2014 - 2016)
-                </li>
-                <li className="text-gray-300">
-                  <strong>MBA Finance</strong> - ULV (2018 - 2020)
-                </li>
-              </ul>
+              <div className="space-y-4">
+                <div className="flex flex-col gap-1">
+                  <h4 className="text-lg font-semibold text-ivory">
+                    MBA, Finance Concentration
+                  </h4>
+                  <p className="text-gray-300">University of La Verne</p>
+                  <p className="text-gray-400 text-sm">2018 - 2020</p>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h4 className="text-lg font-semibold text-ivory">
+                    Entrepreneurial Management
+                  </h4>
+                  <p className="text-gray-300">
+                    California State University, San Bernardino
+                  </p>
+                  <p className="text-gray-400 text-sm">2014 - 2016</p>
+                </div>
+              </div>
             </div>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">Work Experience</h3>

@@ -1,19 +1,26 @@
 import { RevealOnScroll } from '../RevealOnScroll';
 
 export const About = () => {
-  const Languages = ['JavaScript', 'TypeScript', 'Python', 'SQL'];
+  const Languages = [
+    'JavaScript',
+    'TypeScript',
+    'Python',
+    'SQL',
+    'HTML',
+    'CSS',
+  ];
 
   const Frameworks = [
     'Django',
     'React',
     'Express.js',
-    'Node.js',
     'REST Framework',
+    'Tailwind CSS',
   ];
 
   const Databases = ['PostgreSQL', 'SQLite', 'Snowflake'];
 
-  const toolsSkills = ['Git', 'GitHub', 'VS Code', 'Postman', 'DBT'];
+  const toolsSkills = ['Git', 'GitHub', 'VS Code', 'Postman', 'DBT', 'Vite'];
 
   return (
     <section
@@ -29,10 +36,10 @@ export const About = () => {
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
               I'm a passionate web developer with a knack for creating dynamic
-              and responsive web applications. My journey in tech started with a
-              curiosity for how things work, and it has evolved into a
-              full-fledged career where I get to solve problems and bring ideas
-              to life.
+              and exciting web applications. My 8+ years in backend automation
+              and data analytics have given me a unique perspective on solving
+              complex problems and bringing ideas to life with modern web
+              technologies.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

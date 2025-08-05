@@ -60,14 +60,14 @@ export const Projects = () => {
                 A full-stack web app that generates personalized Spotify
                 playlists based on user mood. Combines OpenAI for mood analysis,
                 Spotify's API for real time music data, and a responsive React +
-                Tailwind CSS frontend for a smooth user experience.
+                CSS frontend for a smooth user experience.
               </p>
               <div className="flex flex-wrap gap-2">
                 {[
                   'JavaScript',
                   'React',
                   'Typescript',
-                  'Tailwind CSS',
+                  'CSS',
                   'OpenAI API',
                   'Spotify API',
                   'express.js',

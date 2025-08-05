@@ -12,9 +12,10 @@ export const Home = () => {
             Hi, I am Abraham Deeb
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            I am currently learning new technologies and building my skills as a
-            developer. This is my portfolio where I showcase my projects and
-            progress.
+            Aspiring full-stack engineer with 8+ years in data analytics and
+            backend automation. Skilled in Python, Django, JavaScript, React,
+            and Node.js. Focused on building scalable apps and constantly
+            leveling up.
           </p>
           <div className="flex justify-center space-x-4">
             <a

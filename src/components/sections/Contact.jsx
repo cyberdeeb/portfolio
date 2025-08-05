@@ -84,9 +84,9 @@ export const Contact = () => {
               Get in Touch!
             </h2>
             <p className="text-gray-300 mb-6 text-center">
-              I'm always open to discussing new projects, creative ideas, or
-              opportunities to be part of your vision. Whether you have a
-              question or just want to say hi, feel free to reach out!
+              Let's build something great together! I'm always open to new
+              opportunities, collaborations, or even just a quick chat. Get in
+              touch!
             </p>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="relative">

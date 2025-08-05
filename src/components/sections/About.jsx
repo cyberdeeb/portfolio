@@ -102,10 +102,10 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4">Education</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li className="text-gray-300">
-                  <strong>Entrepreneurship</strong> - CSUSB (2014- 2016)
+                  <strong>Entrepreneurship</strong> - CSUSB (2014 - 2016)
                 </li>
                 <li className="text-gray-300">
-                  <strong>MBA Finance</strong> - ULV (2018- 2020)
+                  <strong>MBA Finance</strong> - ULV (2018 - 2020)
                 </li>
               </ul>
             </div>

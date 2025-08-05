@@ -3,8 +3,7 @@ import { useState, useEffect } from 'react';
 export const Loading = ({ onComplete }) => {
   const [text, setText] = useState('');
   const textArray = ["print('Hello World!')", "console.log('Hello World!')"];
-  const fullText = textArray[Math.round(Math.random())];
-
+  const fullText = textArray[Math.floor(Math.random() * textArray.length)];
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {

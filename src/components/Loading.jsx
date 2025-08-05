@@ -4,6 +4,7 @@ export const Loading = ({ onComplete }) => {
   const [text, setText] = useState('');
   const textArray = ["print('Hello World!')", "console.log('Hello World!')"];
   const fullText = textArray[Math.floor(Math.random() * textArray.length)];
+
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
@@ -23,11 +24,11 @@ export const Loading = ({ onComplete }) => {
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
-      <div className="mb-4 text-4xl font-mono font-bold">
+    <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center px-4">
+      <div className="mb-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-mono font-bold whitespace-nowrap overflow-hidden">
         {text} <span className="animate-blink ml-1"> | </span>
       </div>
-      <div className="w-[800px] h-[2px] bg-gray-800 rounded relative overflow-hidden">
+      <div className="w-full max-w-[800px] h-[2px] bg-gray-800 rounded relative overflow-hidden">
         <div className="w-[40%] h-full bg-red-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar"></div>
       </div>
     </div>

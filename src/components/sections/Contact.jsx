@@ -80,7 +80,7 @@ export const Contact = () => {
       >
         <RevealOnScroll>
           <div className="px-4 max-w-2xl mx-auto w-full">
-            <h2 className="text-3xl font-bold mb-10 text-center text-red-500">
+            <h2 className="text-4xl font-bold mb-10 text-center text-red-500">
               Get in Touch!
             </h2>
             <p className="text-gray-300 mb-6 text-center">
@@ -130,7 +130,7 @@ export const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-red-500 text-white py-3 px-6 rounded-lg font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_0.5rem_0_rgba(239,68,68,0.5)]"
+                className="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_0.5rem_0_rgba(239,68,68,0.5)] hover:bg-red-600/80 cursor-pointer"
               >
                 Send Message
               </button>

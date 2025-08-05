@@ -6,18 +6,27 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
   }, [menuOpen]);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="#home" className="flex items-center">
-            <img
-              src={logo}
-              alt="Logo"
-              className="h-10 w-auto md:h-14 transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(239,68,68,0.7)]"
-            />
-          </a>
+          <button
+            onClick={() => scrollToSection('home')}
+            className="flex items-center transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(239,68,68,0.7)] cursor-pointer"
+          >
+            <img src={logo} alt="Logo" className="h-10 w-auto md:h-14" />
+          </button>
 
           {/* Mobile Menu Button */}
           <button
@@ -44,30 +53,30 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#home"
-              className="text-gray-300 hover:text-ivory transition-colors hover:text-red-400"
+            <button
+              onClick={() => scrollToSection('home')}
+              className="text-gray-300 hover:text-red-400 transition-colors cursor-pointer"
             >
               Home
-            </a>
-            <a
-              href="#about"
-              className="text-gray-300 hover:text-ivory transition-colors hover:text-red-400"
+            </button>
+            <button
+              onClick={() => scrollToSection('about')}
+              className="text-gray-300 hover:text-red-400 transition-colors cursor-pointer"
             >
               About
-            </a>
-            <a
-              href="#projects"
-              className="text-gray-300 hover:text-ivory transition-colors hover:text-red-400"
+            </button>
+            <button
+              onClick={() => scrollToSection('projects')}
+              className="text-gray-300 hover:text-red-400 transition-colors cursor-pointer"
             >
               Projects
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-300 hover:text-ivory transition-colors hover:text-red-400"
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="text-gray-300 hover:text-red-400 transition-colors cursor-pointer"
             >
               Contact
-            </a>
+            </button>
           </div>
         </div>
       </div>

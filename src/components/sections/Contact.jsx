@@ -30,6 +30,22 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.message.trim()
+    ) {
+      showNotification('Please fill in all fields.', 'error');
+      return;
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      showNotification('Please enter a valid email address.', 'error');
+      return;
+    }
+
     try {
       const result = await emailjs.sendForm(
         SERVICE_ID,

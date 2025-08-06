@@ -130,7 +130,7 @@ export const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_0.5rem_0_rgba(239,68,68,0.5)] hover:bg-red-600/80 cursor-pointer"
+                className="w-full bg-red-700 text-white py-3 px-6 rounded-lg font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_0.5rem_0_rgba(239,68,68,0.5)] hover:bg-red-600/80 cursor-pointer"
               >
                 Send Message
               </button>

@@ -21,12 +21,17 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection('home')}
-            className="flex items-center transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(239,68,68,0.7)] cursor-pointer"
+          <a
+            href="https://github.com/cyberdeeb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center transition-all duration-300 hover:scale-105 hover:drop-shadow-[0_0_20px_rgba(239,68,68,0.7)]"
           >
-            <img src={logo} alt="Logo" className="h-10 w-auto md:h-14" />
-          </button>
+            <span className="text-xl md:text-xl font-bold">
+              <span className="text-ivory">cyber</span>
+              <span className="text-red-600">deeb</span>
+            </span>
+          </a>
 
           {/* Mobile Menu Button */}
           <button

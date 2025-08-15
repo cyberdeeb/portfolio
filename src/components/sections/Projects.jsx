@@ -147,12 +147,10 @@ export const Projects = () => {
                 Dead Giveaway - A Mystery Game API
               </h3>
               <p className="text-gray-300">
-                An AI-powered detective mystery game API that dynamically
-                generates unique cases with varying difficulty levels. Players
-                receive suspects, clues, and red herrings tailored to the chosen
-                challenge, creating endless replayability. Built with Django
-                REST Framework, featuring rate-limiting, automated API
-                documentation, and deployed on Railway for global access.
+                An AI-powered detective mystery API that generates dynamic cases
+                with customizable difficulty, complete with suspects, clues, and
+                red herrings. Built with Django REST Framework, featuring rate
+                limiting and auto-generated Swagger API documentation.
               </p>
               <div className="flex flex-wrap gap-2">
                 {['Python', 'Django', 'DRF', 'PostgreSQL', 'OpenAI API'].map(

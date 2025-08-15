@@ -142,6 +142,49 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
+            <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_0.5rem_0_rgba(255,0,0,0.5)] transition-all flex flex-col gap-4">
+              <h3 className="text-xl font-bold">
+                Dead Giveaway - A Mystery Game API
+              </h3>
+              <p className="text-gray-300">
+                An AI-powered detective mystery game API that dynamically
+                generates unique cases with varying difficulty levels. Players
+                receive suspects, clues, and red herrings tailored to the chosen
+                challenge, creating endless replayability. Built with Django
+                REST Framework, featuring rate-limiting, automated API
+                documentation, and deployed on Railway for global access.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {['Python', 'Django', 'DRF', 'PostgreSQL', 'OpenAI API'].map(
+                  (tech) => (
+                    <span
+                      key={tech}
+                      className="bg-red-600/20 text-red-400 px-3 py-1 rounded-full text-sm hover:bg-red-600/30 hover:shadow-[0_0_0.5rem_0_rgba(255,0,0,0.5)] transition-all"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+              <div className="flex gap-3 mt-2">
+                <a
+                  href="https://dead-giveaway-production.up.railway.app/api/schema/swagger/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 hover:underline transition-colors"
+                >
+                  View Project
+                </a>
+                <a
+                  href="https://github.com/cyberdeeb/dead-giveaway"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </RevealOnScroll>

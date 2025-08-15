@@ -144,10 +144,10 @@ export const Projects = () => {
             </div>
             <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_0.5rem_0_rgba(255,0,0,0.5)] transition-all flex flex-col gap-4">
               <h3 className="text-xl font-bold">
-                Dead Giveaway - A Mystery Game API
+                Dead Giveaway: Mystery Game API
               </h3>
               <p className="text-gray-300">
-                An AI-powered detective mystery API that generates dynamic cases
+                An AI powered detective mystery API that generates dynamic cases
                 with customizable difficulty, complete with suspects, clues, and
                 red herrings. Built with Django REST Framework, featuring rate
                 limiting and auto-generated Swagger API documentation.

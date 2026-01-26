@@ -20,10 +20,10 @@ export const Home = () => {
             <span className="block sm:inline sm:ml-3">Abraham Deeb</span>
           </h1>
           <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-sm sm:max-w-lg md:max-w-xl mx-auto px-2 sm:px-0 leading-relaxed">
-            Aspiring full-stack engineer with 8+ years in data analytics and
-            backend automation. Skilled in Python, Django, SQL, JavaScript,
-            React, and TypeScript. Focused on building scalable apps and
-            constantly leveling up.
+            Backend focused engineer with 8+ years in data analytics and backend
+            automation. Skilled in Python, Django, SQL, JavaScript, React, and
+            TypeScript. Focused on building scalable apps and constantly
+            leveling up.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 px-4 sm:px-0">
             <button

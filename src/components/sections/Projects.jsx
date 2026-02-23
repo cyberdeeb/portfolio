@@ -15,13 +15,11 @@ export const Projects = () => {
             <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_0.5rem_0_rgba(255,0,0,0.5)] transition-all flex flex-col gap-4">
               <h3 className="text-xl font-bold">Notification Platform</h3>
               <p className="text-gray-300">
-                An event-driven notification platform using a microservices
-                architecture to explore how distributed systems handle scale and
-                failure. Each service: webhook ingestion, routing, email, SMS,
-                and dead letter processing, runs in an isolated Docker container
-                and communicates exclusively through RabbitMQ queues. Designed
-                for resilience: failed messages are automatically captured in a
-                dead letter queue rather than silently dropped.
+                An event-driven notification platform built with a microservices
+                architecture. Services communicate exclusively through RabbitMQ
+                queues, enabling independent scaling and failure isolation.
+                Features a dead letter queue to capture and inspect failed
+                messages rather than silently dropping them.
               </p>
               <div className="flex flex-wrap gap-2">
                 {[
@@ -31,7 +29,6 @@ export const Projects = () => {
                   'RabbitMQ',
                   'PostgreSQL',
                   'Docker',
-                  'Docker Compose',
                   'Github Actions',
                 ].map((tech) => (
                   <span

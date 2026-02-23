@@ -1,18 +1,12 @@
 import { RevealOnScroll } from '../RevealOnScroll';
 
 export const About = () => {
-  const Languages = [
-    'JavaScript',
-    'TypeScript',
-    'Python',
-    'SQL',
-    'HTML',
-    'CSS',
-  ];
+  const Languages = ['JavaScript', 'TypeScript', 'Python', 'SQL'];
 
   const Frameworks = [
     'Django',
     'React',
+    'Node.js',
     'Express.js',
     'REST Framework',
     'Tailwind CSS',
@@ -20,7 +14,14 @@ export const About = () => {
 
   const Databases = ['PostgreSQL', 'SQLite', 'Snowflake'];
 
-  const toolsSkills = ['Git', 'GitHub', 'VS Code', 'Postman', 'DBT', 'Vite'];
+  const toolsSkills = [
+    'Git',
+    'GitHub',
+    'VS Code',
+    'Postman',
+    'Docker',
+    'RabbitMQ',
+  ];
 
   return (
     <section
@@ -112,7 +113,7 @@ export const About = () => {
                 </div>
                 <div className="flex flex-col gap-1">
                   <h4 className="text-lg font-semibold text-ivory">
-                    Entrepreneurial Management
+                    Bachelor of Business Administration, Entrepreneurship
                   </h4>
                   <p className="text-gray-300">
                     California State University, San Bernardino
@@ -135,9 +136,9 @@ export const About = () => {
                     <strong>Duration:</strong> Nov 2023 - Present
                   </p>
                   <p className="text-gray-300">
-                    Led data initiatives that improved data integrity, automated
-                    workflows, streamlined ETL operations, and supported a
-                    successful CRM migration.
+                    Built Python automation scripts, ETL pipelines, and
+                    refactored a PostgreSQL schema to support a full CRM
+                    migration.
                   </p>
                 </div>
                 <div className="flex flex-col gap-1">
@@ -149,9 +150,8 @@ export const About = () => {
                     <strong>Duration:</strong> May 2022 - May 2023
                   </p>
                   <p className="text-gray-300">
-                    Developed data models, dashboards, and reporting tools that
-                    enhanced data accuracy, cross-team visibility, and
-                    stakeholder decision making.
+                    Wrote Python scripts for data automation and built Snowflake
+                    data models to standardize historical account data.
                   </p>
                 </div>
                 <div className="flex flex-col gap-1">
@@ -165,10 +165,8 @@ export const About = () => {
                     <strong>Duration:</strong> Sept 2021 - May 2022
                   </p>
                   <p className="text-gray-300">
-                    Implemented efficient reporting systems and rebuilt client
-                    facing dashboards, enhancing team productivity, client
-                    satisfaction, and data driven decision making while
-                    mentoring new hires on SQL and Tableau best practices.
+                    Refactored SQL queries and rebuilt client-facing Tableau
+                    reports to improve performance and cross-team visibility.
                   </p>
                 </div>
               </div>

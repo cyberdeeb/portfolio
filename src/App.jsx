@@ -8,6 +8,7 @@ import { Loading } from './components/Loading';
 import { MobileMenu } from './components/MobileMenu';
 import { Navbar } from './components/Navbar';
 import { Projects } from './components/sections/Projects';
+import { NotificationPlatform } from './components/projects/NotificationPlatform';
 import './index.css';
 
 function App() {

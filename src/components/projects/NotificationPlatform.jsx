@@ -9,8 +9,6 @@ const techStack = [
   { name: 'PostgreSQL', color: '#818CF8' },
   { name: 'Docker', color: '#38BDF8' },
   { name: 'Docker Compose', color: '#7DD3FC' },
-  { name: 'Resend', color: '#F472B6' },
-  { name: 'Textbelt', color: '#A3E635' },
   { name: 'GitHub Actions', color: '#C084FC' },
 ];
 

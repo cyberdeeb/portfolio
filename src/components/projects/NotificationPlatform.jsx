@@ -2,35 +2,35 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const techStack = [
-  { name: 'TypeScript', color: '#3178C6' },
-  { name: 'Node.js', color: '#339933' },
-  { name: 'Express', color: '#888888' },
-  { name: 'RabbitMQ', color: '#FF6600' },
-  { name: 'PostgreSQL', color: '#4169E1' },
-  { name: 'Docker', color: '#2496ED' },
-  { name: 'Docker Compose', color: '#2496ED' },
-  { name: 'Resend', color: '#000000' },
-  { name: 'Textbelt', color: '#444444' },
-  { name: 'GitHub Actions', color: '#2088FF' },
+  { name: 'TypeScript', color: '#60A5FA' },
+  { name: 'Node.js', color: '#4ADE80' },
+  { name: 'Express', color: '#E2E8F0' },
+  { name: 'RabbitMQ', color: '#FB923C' },
+  { name: 'PostgreSQL', color: '#818CF8' },
+  { name: 'Docker', color: '#38BDF8' },
+  { name: 'Docker Compose', color: '#7DD3FC' },
+  { name: 'Resend', color: '#F472B6' },
+  { name: 'Textbelt', color: '#A3E635' },
+  { name: 'GitHub Actions', color: '#C084FC' },
 ];
 
 const services = [
   {
     name: 'Webhook Service',
     description:
-      'Public-facing entry point. Validates incoming POST requests and publishes normalized events to the raw-events queue.',
+      'Public facing entry point. Validates incoming POST requests and publishes normalized events to the raw-events queue.',
     icon: '⚡',
   },
   {
     name: 'Router Service',
     description:
-      'Consumes raw-events and routes each message to the correct downstream queue based on event type.',
+      'Consumes raw events and routes each message to the correct downstream queue based on event type.',
     icon: '🔀',
   },
   {
     name: 'Email Worker',
     description:
-      'Subscribes to email-notifications, looks up the user in Postgres, and sends a formatted email via Resend.',
+      'Subscribes to email notifications, looks up the user in Postgres, and sends a formatted email via Resend.',
     icon: '📧',
   },
   {

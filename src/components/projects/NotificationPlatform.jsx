@@ -52,7 +52,7 @@ const decisions = [
   },
   {
     title: 'Why add a dead letter queue?',
-    body: 'Without a DLQ, a failed message, an unknown userId, gets nacked and silently dropped. The DLQ catches those failures instead of discarding them, giving you a place to inspect what went wrong and replay messages once the issue is fixed. It shifts the system from "fail and forget" to "fail and recover."',
+    body: 'Without a DLQ, a failed message, like an unknown userId, gets nacked and silently dropped. The DLQ catches those failures instead of discarding them, giving you a place to inspect what went wrong and replay messages once the issue is fixed. It changes the system from silently losing failed messages to safely isolating them so they can be reviewed and retried.',
   },
   {
     title: 'Why separate containers per service?',

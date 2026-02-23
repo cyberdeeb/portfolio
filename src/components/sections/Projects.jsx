@@ -13,6 +13,47 @@ export const Projects = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_0.5rem_0_rgba(255,0,0,0.5)] transition-all flex flex-col gap-4">
+              <h3 className="text-xl font-bold">Notification Platform</h3>
+              <p className="text-gray-300">
+                An event-driven notification platform using a microservices
+                architecture to explore how distributed systems handle scale and
+                failure. Each service: webhook ingestion, routing, email, SMS,
+                and dead letter processing, runs in an isolated Docker container
+                and communicates exclusively through RabbitMQ queues. Designed
+                for resilience: failed messages are automatically captured in a
+                dead letter queue rather than silently dropped.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'TypeScript',
+                  'Node.js',
+                  'Express',
+                  'RabbitMQ',
+                  'PostgreSQL',
+                  'Docker',
+                  'Docker Compose',
+                  'Github Actions',
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-red-600/20 text-red-400 px-3 py-1 rounded-full text-sm hover:bg-red-600/30 hover:shadow-[0_0_0.5rem_0_rgba(255,0,0,0.5)] transition-all"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex gap-3 mt-2">
+                <a
+                  href="https://github.com/cyberdeeb/notification-platform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 hover:shadow-[0_0_0.5rem_0_rgba(255,0,0,0.5)] transition-all flex flex-col gap-4">
               <h3 className="text-xl font-bold">Lead Validator API</h3>
               <p className="text-gray-300">
                 A secure REST API for real time lead validation, integrating
@@ -30,7 +71,7 @@ export const Projects = () => {
                     >
                       {tech}
                     </span>
-                  )
+                  ),
                 )}
               </div>
               <div className="flex gap-3 mt-2">
@@ -161,7 +202,7 @@ export const Projects = () => {
                     >
                       {tech}
                     </span>
-                  )
+                  ),
                 )}
               </div>
               <div className="flex gap-3 mt-2">

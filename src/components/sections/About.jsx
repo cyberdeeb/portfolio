@@ -35,11 +35,13 @@ export const About = () => {
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              I'm a passionate web developer with a knack for creating dynamic
-              and exciting web applications. My 8+ years in backend automation
-              and data analytics have given me a unique perspective on solving
-              complex problems and bringing ideas to life with modern web
-              technologies.
+              Data engineer turned builder, 8+ years turning data problems into
+              automated systems, now focused on backend and full-stack software
+              engineering. Portfolio includes a distributed notification
+              platform with RabbitMQ and Docker, a production-grade validation
+              API, and several AI-integrated applications. Comfortable across
+              the stack, with a bias toward clean APIs, reliable systems, and
+              shipping things that work.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

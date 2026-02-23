@@ -19,7 +19,7 @@ export const Home = () => {
             <span className="block sm:inline">Hi, I am</span>
             <span className="block sm:inline sm:ml-3">Abraham Deeb</span>
           </h1>
-          <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-sm sm:max-w-lg md:max-w-xl mx-auto px-2 sm:px-0 leading-relaxed">
+          <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-sm sm:max-w-lg md:max-w-2xl mx-auto px-2 sm:px-0 leading-relaxed">
             8+ years in data, now actively transitioning into backend and
             full-stack software engineering, I build with Python, TypeScript,
             and Node.js.

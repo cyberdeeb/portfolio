@@ -75,7 +75,7 @@ export function NotificationPlatform() {
         <div className="max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
           <button
             onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-gray-400 transition-all duration-300 delay-75 hover:text-red-400 text-sm"
+            className="flex items-center gap-2 text-gray-400 transition-all duration-300 delay-75 hover:text-red-400 text-sm cursor-pointer"
           >
             ← Back to Portfolio
           </button>
@@ -118,6 +118,7 @@ export function NotificationPlatform() {
             {techStack.map((tech) => (
               <span
                 key={tech.name}
+                style={{ borderColor: tech.color, color: tech.color }}
                 className="text-xs px-3 py-1 rounded-full border border-gray-800 text-gray-300"
               >
                 {tech.name}
@@ -245,7 +246,7 @@ export function NotificationPlatform() {
         <div className="border-t border-gray-800 pt-12 flex items-center justify-between">
           <button
             onClick={() => navigate('/')}
-            className="text-sm text-gray-400 hover:text-white transition-colors"
+            className="flex items-center gap-2 text-gray-400 transition-all duration-300 delay-75 hover:text-red-400 text-sm cursor-pointer"
           >
             ← Back to Portfolio
           </button>

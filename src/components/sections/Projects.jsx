@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { RevealOnScroll } from '../RevealOnScroll';
 
 export const Projects = () => {
@@ -40,6 +41,12 @@ export const Projects = () => {
                 ))}
               </div>
               <div className="flex gap-3 mt-2">
+                <Link
+                  to="/projects/notification-platform"
+                  className="text-red-400 hover:text-red-300 hover:underline transition-colors"
+                >
+                  View Project
+                </Link>
                 <a
                   href="https://github.com/cyberdeeb/notification-platform"
                   target="_blank"

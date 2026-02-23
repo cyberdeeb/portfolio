@@ -21,7 +21,7 @@ export const Home = () => {
           </h1>
           <p className="text-gray-400 text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-sm sm:max-w-lg md:max-w-2xl mx-auto px-2 sm:px-0 leading-relaxed">
             8+ years in data, now actively transitioning into backend and
-            full-stack software engineering, I build with Python, TypeScript,
+            full-stack software engineering. I build with Python, TypeScript,
             and Node.js.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 px-4 sm:px-0">

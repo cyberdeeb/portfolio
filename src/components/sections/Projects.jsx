@@ -30,7 +30,7 @@ export const Projects = () => {
                   'RabbitMQ',
                   'PostgreSQL',
                   'Docker',
-                  'Github Actions',
+                  'GitHub Actions',
                 ].map((tech) => (
                   <span
                     key={tech}
@@ -67,16 +67,21 @@ export const Projects = () => {
                 key management.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Django', 'DRF', 'Twilio', 'Hunter.io', 'PostgreSQL'].map(
-                  (tech) => (
-                    <span
-                      key={tech}
-                      className="bg-red-600/20 text-red-400 px-3 py-1 rounded-full text-sm hover:bg-red-600/30 hover:shadow-[0_0_0.5rem_0_rgba(255,0,0,0.5)] transition-all"
-                    >
-                      {tech}
-                    </span>
-                  ),
-                )}
+                {[
+                  'Python',
+                  'Django',
+                  'DRF',
+                  'Twilio',
+                  'Hunter.io',
+                  'PostgreSQL',
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-red-600/20 text-red-400 px-3 py-1 rounded-full text-sm hover:bg-red-600/30 hover:shadow-[0_0_0.5rem_0_rgba(255,0,0,0.5)] transition-all"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
               <div className="flex gap-3 mt-2">
                 <a
@@ -111,7 +116,7 @@ export const Projects = () => {
                 {[
                   'JavaScript',
                   'React',
-                  'Typescript',
+                  'TypeScript',
                   'CSS',
                   'OpenAI API',
                   'Spotify API',

@@ -1,6 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
-// Cards with a falsy `url` render as a plain <div> instead of a link.
 const clientWork = [
   {
     name: "Mama's Catering Kitchen",
@@ -57,8 +56,6 @@ const StatusBadge = ({ status }) => {
   );
 };
 
-// These five children map 1:1 onto the five subgrid rows declared on the card,
-// so every block starts at the same y position across all three cards.
 const ClientCard = ({ project }) => (
   <>
     {/* 1. Header — logo centered above the title, badge pinned top-right */}
@@ -100,8 +97,6 @@ const ClientCard = ({ project }) => (
       ))}
     </div>
 
-    {/* 5. Link slot — rendered blank when there is no URL so the row still
-           occupies its track and the stack above it stays aligned */}
     <span
       aria-hidden={!project.url}
       className={`text-sm self-start transition-colors ${

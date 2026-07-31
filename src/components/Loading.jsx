@@ -1,9 +1,14 @@
 import { useState, useEffect } from 'react';
 
+const textArray = ["print('Hello World!')", "console.log('Hello World!')"];
+
 export const Loading = ({ onComplete }) => {
   const [text, setText] = useState('');
-  const textArray = ["print('Hello World!')", "console.log('Hello World!')"];
-  const fullText = textArray[Math.floor(Math.random() * textArray.length)];
+  // Picked once on mount. Computing this during render would give a new value
+  // on every keystroke and restart the effect below.
+  const [fullText] = useState(
+    () => textArray[Math.floor(Math.random() * textArray.length)],
+  );
 
   useEffect(() => {
     let index = 0;
@@ -21,7 +26,7 @@ export const Loading = ({ onComplete }) => {
     }, 100);
 
     return () => clearInterval(interval);
-  }, [onComplete]);
+  }, [fullText, onComplete]);
 
   return (
     <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center px-4">

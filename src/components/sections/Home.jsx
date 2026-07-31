@@ -1,10 +1,10 @@
-import { RevealOnScroll } from '../RevealOnScroll';
+import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Home = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -26,13 +26,13 @@ export const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 px-4 sm:px-0">
             <button
-              onClick={() => scrollToSection('projects')}
+              onClick={() => scrollToSection("client-work")}
               className="w-4/5 sm:w-auto bg-red-700 text-ivory py-4 sm:py-3 px-8 sm:px-8 md:px-10 rounded-lg sm:rounded font-medium text-base sm:text-base md:text-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(239,68,68,0.4)] hover:bg-red-700 active:scale-95 cursor-pointer"
             >
               View Projects
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
               className="w-4/5 sm:w-auto border-2 border-red-500 text-ivory py-4 sm:py-3 px-8 sm:px-8 md:px-10 rounded-lg sm:rounded font-medium text-base sm:text-base md:text-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(239,68,68,0.2)] hover:bg-red-600/20 active:scale-95 cursor-pointer"
             >
               Contact Me

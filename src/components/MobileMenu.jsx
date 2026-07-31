@@ -1,6 +1,21 @@
-import { useEffect } from 'react';
+import { scrollToSection } from '../utils/scrollToSection';
+
+const navItems = [
+  { id: 'home', label: 'Home', delay: 'delay-75' },
+  { id: 'about', label: 'About', delay: 'delay-100' },
+  { id: 'client-work', label: 'Client Work', delay: 'delay-150' },
+  { id: 'projects', label: 'Projects', delay: 'delay-150' },
+  { id: 'contact', label: 'Contact', delay: 'delay-200' },
+];
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
+  // Closing the menu is what releases the `overflow: hidden` lock Navbar puts
+  // on <body>, so the scroll has to wait a frame for that to take effect.
+  const handleNavClick = (sectionId) => {
+    setMenuOpen(false);
+    requestAnimationFrame(() => scrollToSection(sectionId));
+  };
+
   return (
     <div
       className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] backdrop-blur-lg z-30 flex flex-col items-center justify-center
@@ -18,51 +33,17 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         &times;
       </button>
       <nav className="flex flex-col items-center space-y-8">
-        <a
-          href="#home"
-          onClick={() => setMenuOpen(false)}
-          className={`text-2xl font-semibold text-ivory transition-all duration-300 delay-75 hover:text-red-400 ${
-            menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-        >
-          Home
-        </a>
-        <a
-          href="#about"
-          onClick={() => setMenuOpen(false)}
-          className={`text-2xl font-semibold text-ivory transition-all duration-300 delay-100 hover:text-red-400 ${
-            menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-        >
-          About
-        </a>
-        <a
-          href="#client-work"
-          onClick={() => setMenuOpen(false)}
-          className={`text-2xl font-semibold text-ivory transition-all duration-300 delay-150 hover:text-red-400 ${
-            menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-        >
-          Client Work
-        </a>
-        <a
-          href="#projects"
-          onClick={() => setMenuOpen(false)}
-          className={`text-2xl font-semibold text-ivory transition-all duration-300 delay-150 hover:text-red-400 ${
-            menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-        >
-          Projects
-        </a>
-        <a
-          href="#contact"
-          onClick={() => setMenuOpen(false)}
-          className={`text-2xl font-semibold text-ivory transition-all duration-300 delay-200 hover:text-red-400 ${
-            menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-        >
-          Contact
-        </a>
+        {navItems.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => handleNavClick(item.id)}
+            className={`text-2xl font-semibold text-ivory transition-all duration-300 ${item.delay} hover:text-red-400 cursor-pointer ${
+              menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}
+          >
+            {item.label}
+          </button>
+        ))}
       </nav>
     </div>
   );

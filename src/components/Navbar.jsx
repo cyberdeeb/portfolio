@@ -71,6 +71,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               About
             </button>
             <button
+              onClick={() => scrollToSection('client-work')}
+              className="text-gray-300 hover:text-red-400 transition-colors cursor-pointer"
+            >
+              Client Work
+            </button>
+            <button
               onClick={() => scrollToSection('projects')}
               className="text-gray-300 hover:text-red-400 transition-colors cursor-pointer"
             >

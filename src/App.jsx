@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { About } from './components/sections/About';
+import { ClientWork } from './components/sections/ClientWork';
 import { Contact } from './components/sections/Contact';
 import { Home } from './components/sections/Home';
 import { Loading } from './components/Loading';
@@ -30,6 +31,7 @@ function App() {
                 <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                 <Home />
                 <About />
+                <ClientWork />
                 <Projects />
                 <Contact />
               </div>

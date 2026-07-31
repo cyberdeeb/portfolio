@@ -37,6 +37,15 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
           About
         </a>
         <a
+          href="#client-work"
+          onClick={() => setMenuOpen(false)}
+          className={`text-2xl font-semibold text-ivory transition-all duration-300 delay-150 hover:text-red-400 ${
+            menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+          }`}
+        >
+          Client Work
+        </a>
+        <a
           href="#projects"
           onClick={() => setMenuOpen(false)}
           className={`text-2xl font-semibold text-ivory transition-all duration-300 delay-150 hover:text-red-400 ${

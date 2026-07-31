@@ -8,7 +8,7 @@ const clientWork = [
     status: "Live site",
     description:
       "A growing catering business had outgrown its Wix site, so I rebuilt it from scratch as a custom platform. It pairs online ordering wired to Stripe with separate parent, teacher, and admin portals, plus built-in reporting.",
-    outcome: "Custom build with Stripe ordering, live and in use",
+    outcome: "Custom build with Stripe ordering",
     stack: [
       "Next.js",
       "TypeScript",
@@ -25,7 +25,7 @@ const clientWork = [
     status: "Live site",
     description:
       "A brokerage that needed a site as polished as the deals it handles. I designed and built a professional marketing site plus a brokerage portal for managing listings and internal tools.",
-    outcome: "Listings and internal tools managed in one place",
+    outcome: "Listings and internal tools in one place",
     stack: ["Next.js", "TypeScript", "Tailwind", "Postgres", "Supabase"],
     url: "https://www.mhpbrokerage.com/",
   },
